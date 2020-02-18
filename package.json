@@ -2,7 +2,7 @@
   "name": "test-task",
   "version": "1.0.0",
   "description": "Вёрстка лендинга по макету",
-  "main": "./app/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",

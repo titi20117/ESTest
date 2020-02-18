@@ -1,0 +1,34 @@
+@myColor: blue;
+.block-page {
+    position: relative;
+    width: 1400px;
+    //height: 7094px;
+    &__item {
+        &_header {
+
+            &__intro {
+                &__title {
+
+                }
+                &__nav {
+                    & a {
+                        text-decoration: none;
+                        color: #000000;
+                        font-style: normal;
+                        font-size: 17px;
+                        line-height: 20px;
+                    }
+                    &__solution::after {
+                        content: "";
+                        border-bottom: 1px solid #000;
+                        border-radius: 50px;
+                    }
+                    &__blog::before {
+                        background: radial-gradient(44.89% 44.89% at 50.84% 70.07%, #FF882A 44.48%, #F7391B 100%);
+
+                    }
+                }
+            }
+        }
+    }
+}
