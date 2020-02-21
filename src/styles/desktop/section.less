@@ -2,11 +2,8 @@
     text-align: center;
     &__head {
         &__cloud {
-            position: absolute;
-            left: 795px;
-            top: 774px;
             & img {
-                position: absolute;
+                margin-left: 550px;
             }
         }
         & h3 {
@@ -126,7 +123,7 @@
                             line-height: 36px;
                             padding: 2px 0;
                             &::before {
-                                content: url('../public/mark_li.svg');
+                                content: url('../../public/mark_li.svg');
                                 position: relative;
                                 right: 21px;
                             }
@@ -137,22 +134,21 @@
         }
     }
     &__review {
+        &::before {
+            content: url('../../public/Arrow\ растр.svg');
+            position: relative;
+            top: 38px;
+        }
         &__log {
-            //height: 583px;
             background: #16acea33;
             text-align: center;
-            padding: 10px 0 50px;
-            &::before {
-                content: url('../public/Arrow\ растр.svg');
-                position: absolute;
-                top: 4847px;
-            }
+            padding: 50px 0;
             & h5 {
                 font-weight: 500;
                 font-size: 40px;
                 line-height: 48px;
                 color: #000000;
-                margin: 28px;
+                margin: 0 28px 28px;
             }
             & p {
                 font-weight: 300;

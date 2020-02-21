@@ -1,10 +1,10 @@
 .block-page__item_header {
-    margin-bottom: 300px;
+    margin-bottom: 10px;
     &__intro {
         display: flex;
         flex-direction: row;
         width: 85%;
-        margin: 46px 0 46px 101px;
+        margin: 46px 0 10px 101px;
         &__title {
             font-size: 50px;
             position: relative;
@@ -21,6 +21,38 @@
             left : 21%;
             &__solution {
                 margin: 0 15px;
+                &_title {
+                    &__details {
+                        display: none;
+                        position: relative;
+                        top: 30px;
+                        & ul {
+                            display: flex;
+                            margin: 0 0 94px 250px;
+                            & li {
+                                list-style-type: none;
+                                width: 450px;
+                                & img {
+                                    float: left;
+                                }
+                                & a {
+                                    text-decoration: none;
+                                    vertical-align: -webkit-baseline-middle;
+                                    color: #000;
+                                    position: relative;
+                                    top: 23px;
+                                    left: 12px;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                    & span {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 & a {
                     text-decoration: none;
                     color: #000000;
@@ -31,8 +63,18 @@
                     margin-left: 5px;
                 }
                 &:nth-last-of-type(4){
+                    &:hover {
+                        &::after {
+                            content: url('../../public/vee_up.svg');    
+                        }
+                    }
+                    &:focus {
+                        &::after {
+                            content: url('../../public/vee.svg');
+                        }
+                    }
                     &::after {
-                        content: url('../public/vee.svg');
+                        content: url('../../public/vee.svg');
                     }
                 }
                 &:nth-last-of-type(1) {
@@ -43,7 +85,7 @@
                         bottom: 3px;
                     }
                     &::before {
-                        content: url(../public/Hot.svg);
+                        content: url('../../public/Hot.svg');
                     }
                 }
             }
@@ -94,9 +136,14 @@
         display: flex;
         flex-direction: row;
         width: 85%;
-        margin-left: 101px;
+        margin: 50px 0 250px 36px;
         &__menu-left {
+            display: flex;
             width: 36%;
+            margin: 0px 56px;
+            & div {
+                width: 380px;
+            }
             & h2 {
                 font-weight: bolder;
                 font-size: 65px;
@@ -127,7 +174,7 @@
                     position: relative;
                     bottom: 5px;
                     &::before {
-                        content: url('../public/iconTryScan.svg');
+                        content: url('../../public/iconTryScan.svg');
                         position: relative;
                         top: 8px;
                         right: 5px;
@@ -137,29 +184,30 @@
             }
             & img {
                 position: absolute;
-                left: 39%;
-                top: 60%;
+                left: 44%;
+                top: 58%;
                 z-index: 5;
             }
         }
         &__menu-right {
-            width: 46%;
+            position: relative;
+            top: 43px;
+            left: 160px;
+            width: 48%;
             border: solid 2px #ffffff;
             border-bottom: solid 14px #ffffff;
             height: 403px;
-            position: absolute;
-            left: 48%;
-            top: 150px;
             box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
             &__child {
                 box-sizing: border-box;
                 border: solid 20px #ffffff;
                 border-bottom: solid 50px #ffffff;
+                border-top: solid 50px #fff;
                 width: 100%;
-                position: absolute;
+                position: relative;
                 left: 3%;
-                bottom: 0;
-                height: 100%;
+                bottom: 42px;
+                height: 110%;
                 font-weight: 500;
                 font-size: 26px;
                 line-height: 28px;
@@ -179,7 +227,7 @@
                     padding: 2px 0;
                     list-style-type: none! important;
                     &::before {
-                        content: url('../public/mark_li.svg');
+                        content: url('../../public/mark_li.svg');
                         position: absolute;
                         left: 1em;
                         color: skyblue;
@@ -190,7 +238,7 @@
 
             & img {
                 position: relative;
-                top: 240px;
+                bottom: 190px;
                 left: 316px;
                 z-index: -1;
             }

@@ -1,0 +1,201 @@
+@media screen and (max-width: 1024px) {
+    .block-page__item_header {
+        margin-bottom: 300px;
+        &__intro {
+            display: flex;
+            flex-direction: row;
+            width: 85%;
+            margin: 46px 0 46px 101px;
+            &__title {
+                font-size: 50px;
+                position: relative;
+                font-weight: bolder;
+                bottom: 19px;
+                & span {
+                    color: #00ADEE;
+                    text-decoration: underline;
+                }
+            }
+            &__nav {
+                display: flex;
+                position: absolute;
+                left : 21%;
+                &__solution {
+                    margin: 0 15px;
+                    & a {
+                        text-decoration: none;
+                        color: #000000;
+                        font-style: normal;
+                        font-size: 17px;
+                        font-weight: normal;
+                        line-height: 20px;
+                        margin-left: 5px;
+                    }
+                    &:nth-last-of-type(4){
+                        &::after {
+                            content: url('../../public/vee.svg');
+                        }
+                    }
+                    &:nth-last-of-type(1) {
+                        position: relative;
+                        bottom: 2px;
+                        & a {
+                            position: relative;
+                            bottom: 3px;
+                        }
+                        &::before {
+                            content: url('../../public/Hot.svg');
+                        }
+                    }
+                }
+            }
+            &__access {
+                position: absolute;
+                left: 950px;
+                & button {
+                    text-decoration: none;
+                    color: #000;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    cursor: pointer;
+                    &:nth-child(1) {
+                        width: 178px;
+                        height: 43px;
+                        color: #16ACEA;
+                        margin-right: 50px;
+                        background: #FFFFFF;
+                        box-shadow: 10px 10px 30px rgba(159, 164, 196, 0.2);
+                        border: 1px solid #16ACEA;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        &:hover {
+                            background: #0093CF;
+                            color: #fff;
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 80px;
+                        height: 43px;
+                        border: 1px solid #000000;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        background: #FFFFFF;
+                        &:hover {
+                            background: #FFFFFF;
+                            border: 1px solid #0093CF;
+                            color: #0093CF;
+                        }
+                    }
+                }
+            }
+        }
+        &__description {
+            display: flex;
+            flex-direction: row;
+            width: 85%;
+            margin-left: 101px;
+            &__menu-left {
+                width: 36%;
+                & h2 {
+                    font-weight: bolder;
+                    font-size: 65px;
+                    line-height: 72px;
+                }
+                & p {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                & button {
+                    background: #16ACEA;
+                    border-radius: 4px;
+                    color: #fff;
+                    width: 228px;
+                    height: 55px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background: #0093CF;
+                        color: #fff;
+                    }
+                    & span {
+                        align-self: center;
+                        position: relative;
+                        bottom: 5px;
+                        &::before {
+                            content: url('../../public/iconTryScan.svg');
+                            position: relative;
+                            top: 8px;
+                            right: 5px;
+                            border: none;
+                        }
+                    }
+                }
+                & img {
+                    position: absolute;
+                    left: 39%;
+                    top: 60%;
+                    z-index: 5;
+                }
+            }
+            &__menu-right {
+                width: 46%;
+                border: solid 2px #ffffff;
+                border-bottom: solid 14px #ffffff;
+                height: 403px;
+                position: absolute;
+                left: 48%;
+                top: 150px;
+                box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
+                &__child {
+                    box-sizing: border-box;
+                    border: solid 20px #ffffff;
+                    border-bottom: solid 50px #ffffff;
+                    width: 100%;
+                    position: absolute;
+                    left: 3%;
+                    bottom: 0;
+                    height: 100%;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 28px;
+                    border-radius: 5px;
+                    box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
+                & h4 {
+                    margin-left: 20px;
+                    & span {
+                        color: #0093CF;
+                    }
+                }
+                & ul {
+                    padding: 1px 1px 1px 40px;
+                    & li {
+                        line-height: 38px;
+                        font-size: 20px;
+                        padding: 2px 0;
+                        list-style-type: none! important;
+                        &::before {
+                            content: url('../../public/mark_li.svg');
+                            position: absolute;
+                            left: 1em;
+                            color: skyblue;
+                        }
+                    }
+                }
+                }
+    
+                & img {
+                    position: relative;
+                    top: 240px;
+                    left: 316px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

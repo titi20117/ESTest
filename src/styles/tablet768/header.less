@@ -1,0 +1,133 @@
+@media screen and (max-width: 768px) {
+    .block-page__item_header {
+        margin-bottom: 300px;
+        &__intro {
+            display: flex;
+            flex-direction: row;
+            width: 85%;
+            margin: 46px 0 46px 101px;
+            &__title {
+                font-size: 50px;
+                position: relative;
+                font-weight: bolder;
+                bottom: 19px;
+                & span {
+                    color: #00ADEE;
+                    text-decoration: underline;
+                }
+            }
+            &__nav {
+                display: none;
+            }
+            &__access {
+                display: none;
+            }
+        }
+        &__description {
+            display: flex;
+            flex-direction: row;
+            width: 85%;
+            margin-left: 101px;
+            &__menu-left {
+                width: 36%;
+                & h2 {
+                    font-weight: bolder;
+                    font-size: 65px;
+                    line-height: 72px;
+                }
+                & p {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                & button {
+                    background: #16ACEA;
+                    border-radius: 4px;
+                    color: #fff;
+                    width: 228px;
+                    height: 55px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background: #0093CF;
+                        color: #fff;
+                    }
+                    & span {
+                        align-self: center;
+                        position: relative;
+                        bottom: 5px;
+                        &::before {
+                            content: url('../../public/iconTryScan.svg');
+                            position: relative;
+                            top: 8px;
+                            right: 5px;
+                            border: none;
+                        }
+                    }
+                }
+                & img {
+                    position: absolute;
+                    left: 39%;
+                    top: 60%;
+                    z-index: 5;
+                }
+            }
+            &__menu-right {
+                width: 46%;
+                border: solid 2px #ffffff;
+                border-bottom: solid 14px #ffffff;
+                height: 403px;
+                position: absolute;
+                left: 48%;
+                top: 150px;
+                box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
+                &__child {
+                    box-sizing: border-box;
+                    border: solid 20px #ffffff;
+                    border-bottom: solid 50px #ffffff;
+                    width: 100%;
+                    position: absolute;
+                    left: 3%;
+                    bottom: 0;
+                    height: 100%;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 28px;
+                    border-radius: 5px;
+                    box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
+                & h4 {
+                    margin-left: 20px;
+                    & span {
+                        color: #0093CF;
+                    }
+                }
+                & ul {
+                    padding: 1px 1px 1px 40px;
+                    & li {
+                        line-height: 38px;
+                        font-size: 20px;
+                        padding: 2px 0;
+                        list-style-type: none! important;
+                        &::before {
+                            content: url('../../public/mark_li.svg');
+                            position: absolute;
+                            left: 1em;
+                            color: skyblue;
+                        }
+                    }
+                }
+                }
+    
+                & img {
+                    position: relative;
+                    top: 240px;
+                    left: 316px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
