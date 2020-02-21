@@ -27,6 +27,10 @@ module.exports = {
             {
                 test: /\.svg$/,
                 loader: 'svg-url-loader'
+            },
+            {
+                test: /\.php$/,
+                loaders: ['html-minify', 'php-loader']
             }
         ]
     }
