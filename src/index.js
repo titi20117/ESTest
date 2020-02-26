@@ -1,4 +1,5 @@
 import './scripts/home.js';
+import '../src/retina.min.js'
 
 import './styles/desktop/page.less';
 import './styles/desktop/header.less';

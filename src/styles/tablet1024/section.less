@@ -1,24 +1,19 @@
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .block-page__item_section {
         text-align: center;
         &__head {
             &__cloud {
-                position: absolute;
-                left: 795px;
-                top: 774px;
                 & img {
-                    position: absolute;
+                    margin-left: 250px;
                 }
             }
             & h3 {
-                font-size: 48px;
-                line-height: 58px;
-                margin: 0 278px 30px;
+                margin: 0 189px 30px;
             }
             & p {
                 font-size: 23px;
                 line-height: 30px;
-                margin: 0 180px 65px;
+                margin: 0 62px 65px;
                 font-weight: 500;
                 & span:nth-child(1) {
                     color: #FDD109;
@@ -96,15 +91,7 @@
                 text-align: center;
             }
             &__info {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                height: 550px;
-                font-size: 18px;
-                line-height: 30px;
-                font-weight: 300;
-                color: #485965;
-                margin: 0 50px;
+                height: 590px;
                 &__text {
                     width: 43%;
                     text-align: left;
@@ -138,16 +125,15 @@
             }
         }
         &__review {
+            &::before {
+                content: url('../../public/Arrow\ растр.svg');
+                position: relative;
+                top: 38px;
+            }
             &__log {
-                //height: 583px;
                 background: #16acea33;
                 text-align: center;
-                padding: 10px 0 50px;
-                &::before {
-                    content: url('../../public/Arrow\ растр.svg');
-                    position: absolute;
-                    top: 4847px;
-                }
+                padding: 10px 0 50px;              
                 & h5 {
                     font-weight: 500;
                     font-size: 40px;
@@ -181,25 +167,10 @@
                 }
             }
             &__carousel {
-                margin-top: 130px;
-                margin-bottom: 160px;
-                z-index: -1;
                 &__viewport {
-                    height: 505px;
-                    width: 1240px;
-                    background: #fdd1094d;
-                    border-radius: 10px;
-                    z-index: 1;
-                    margin: 0 auto;
-                    position: relative;
-                    padding: 0;
-                    list-style-type: none;
-                    -webkit-background-size : cover;
-                    -moz-background-size: cover;
-                    background-size: cover;
+                    width: 100%;
                     &__thumb {
-                        display: none;
-                        
+                        display: none;                      
                     }
                     &__thumb:checked ~ &__track__slide {
                         top: 0;
