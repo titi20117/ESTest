@@ -254,6 +254,34 @@
         display: none;
         &-menu {
             display: none;
+            margin-left: 1500px;
+            width: 768px;
+            height: 627px;
+            &__head {
+                display: flex;
+            }
+            &__section {
+                width: 100%;
+                left: 80px;
+                &__nav {
+                    &__solution {
+                        & ul {
+                            margin: 0;
+                            & li {
+                                list-style-type: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &__access {
+                position: absolute;
+                top: 453px;
+                left: 100px;
+                & button {
+                    display: block;
+                }
+            }
         }
     }
 }

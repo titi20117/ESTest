@@ -16,9 +16,14 @@
             &__nav {
                 display: flex;
                 position: absolute;
-                left : 21%;
+                left: 77px;
+                top: 163px;
                 &__solution {
                     margin: 0 15px;
+                    & a {
+                        font-size: 20px;
+                        line-height: 50px;
+                    }
                     &_title {
                         &__details {
                             display: none;
@@ -34,15 +39,8 @@
                                         float: left;
                                     }
                                     & a {
-                                        text-decoration: none;
-                                        vertical-align: -webkit-baseline-middle;
-                                        color: #000;
-                                        position: relative;
-                                        top: 23px;
-                                        left: 12px;
-                                        font-weight: 600;
                                         font-size: 20px;
-                                        line-height: 28px;
+                                        line-height: 50px;
                                         & span {
                                             display: block;
                                         }
@@ -55,9 +53,9 @@
                         text-decoration: none;
                         color: #000000;
                         font-style: normal;
-                        font-size: 17px;
+                        font-size: 20px;
                         font-weight: normal;
-                        line-height: 20px;
+                        line-height: 50px;
                         margin-left: 5px;
                     }
                     &:nth-last-of-type(4){
@@ -73,6 +71,9 @@
                         }
                         &::after {
                             content: url('../../public/vee.svg');
+                            position: relative;
+                            //bottom: 133px;
+                            left: 101px;
                         }
                     }
                     &:nth-last-of-type(1) {
@@ -90,8 +91,8 @@
             }
             &__access {
                 position: absolute;
-                left: 670px;
-                top: 35px;
+                left: 100px;
+                top: 500px;
                 & button {
                     text-decoration: none;
                     color: #000;
@@ -232,6 +233,59 @@
             cursor: pointer;
             & img {
                 height: 50px;
+            }
+            &-menu {
+                padding-top: 28px;
+                margin-left: 1500px;
+                width: 768px;
+                height: 627px;
+                box-shadow: 10px 10px 10px 10px #efe9e9;
+                &__head {
+                    display: flex;
+                    &__logo {
+                        position: absolute;
+                        left: 100px;
+                    }
+                    &__close {
+                        position: absolute;
+                        left: 600px;
+                    }
+                }
+                &__section {
+                    width: 100%;
+                    left: 80px;
+                    &__nav {
+                        &:hover &::after {
+                            bottom: 133px;
+                        }
+                        &:hover &__solution{
+                            display: block;
+                        }
+                        &::after {
+                            bottom: 34px;
+                        }
+                        &__solution {
+                            display: none;
+                            & ul {
+                                margin: 0;
+                                padding: 0;
+                                & li {
+                                    list-style-type: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__access {
+                    position: absolute;
+                    top: 487px;
+                    left: 100px;
+                    & button {
+                        display: block;
+                        display: table-footer-group;
+                        margin: 10px 0;
+                    }
+                }
             }
         }
     }
