@@ -1,8 +1,8 @@
-@media only screen and (min-width: 375px) and (max-width: 700px) {
+@media screen and (min-width: 375px) and (max-width: 700px) {
     .block-page__item_header {
         &__intro {
             width: 93%;
-            margin: 46px 0 46px 50px;
+            margin: 46px 0 0 50px;
             &__title {
                 font-size: 50px;
                 position: relative;
@@ -16,9 +16,14 @@
             &__nav {
                 display: flex;
                 position: absolute;
-                left : 21%;
+                left: 77px;
+                top: 163px;
                 &__solution {
                     margin: 0 15px;
+                    & a {
+                        font-size: 20px;
+                        line-height: 50px;
+                    }
                     &_title {
                         &__details {
                             display: none;
@@ -34,15 +39,8 @@
                                         float: left;
                                     }
                                     & a {
-                                        text-decoration: none;
-                                        vertical-align: -webkit-baseline-middle;
-                                        color: #000;
-                                        position: relative;
-                                        top: 23px;
-                                        left: 12px;
-                                        font-weight: 600;
                                         font-size: 20px;
-                                        line-height: 28px;
+                                        line-height: 50px;
                                         & span {
                                             display: block;
                                         }
@@ -55,9 +53,9 @@
                         text-decoration: none;
                         color: #000000;
                         font-style: normal;
-                        font-size: 17px;
+                        font-size: 20px;
                         font-weight: normal;
-                        line-height: 20px;
+                        line-height: 50px;
                         margin-left: 5px;
                     }
                     &:nth-last-of-type(4){
@@ -73,6 +71,9 @@
                         }
                         &::after {
                             content: url('../../public/vee.svg');
+                            position: absolute;
+                            top: 16px;
+                            left: 101px;
                         }
                     }
                     &:nth-last-of-type(1) {
@@ -90,8 +91,8 @@
             }
             &__access {
                 position: absolute;
-                left: 670px;
-                top: 35px;
+                left: 100px;
+                top: 500px;
                 & button {
                     text-decoration: none;
                     color: #000;
@@ -110,6 +111,7 @@
                         border: 1px solid #16ACEA;
                         box-sizing: border-box;
                         border-radius: 4px;
+                        display: block;
                         &:hover {
                             background: #0093CF;
                             color: #fff;
@@ -130,20 +132,29 @@
                     }
                 }
             }
+            &__nav, &__access {
+                display: none;
+            }
         }
         &__description {
-            display: flex;
-            flex-direction: row;
-            width: 85%;
-            margin: 50px 0 150px 0;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 0 50px;
+            text-align: center;
             &__menu-left {
-                width: 36%;
+                width: 80%;
+                margin: 0 auto;
+                text-align: left;
+                padding-left: 10px;
+                & div {
+                    width: 100%;
+                }
                 & h2 {
-                    font-size: 51px;
+                    font-size: 26px;
                 }
                 & p {
                     font-weight: 300;
-                    font-size: 18px;
+                    font-size: 16px;
                     line-height: 30px;
                 }
                 & button {
@@ -175,28 +186,125 @@
                     }
                 }
                 & img {
-                    position: absolute;
-                    left: 34%;
-                    top: 60%;
-                    z-index: 5;
+                    display: none;
+                    position: relative;
+                    left: -197px;
+                    top: 870px;
+                    height: 188px;
+                    width: 160px;
                 }
             }
             &__menu-right {
-                position: relative;
-                left: 50px;
-                width: 51%;
+                left: 0;
+                margin: 51px auto 0;
+                width: 80%;
+                height: 515px;
                 &__child {
-                    font-size: 25px;
-                & ul {
-                    padding: 1px 1px 1px 40px;
-                    & li {
-                        font-size: 15px;
+                    font-size: 35px;
+                    text-align: left;
+                    & h4 {
+                        line-height: 43px;
+                        font-size: 23px;
+                    }
+                    & ul {
+                        padding: 1px 1px 1px 40px;
+                        & li {
+                            font-size: 14px;
+                        }
                     }
                 }
-            }
-    
                 & img {
-                    left: 185px;
+                    left: 108px;
+                    top: -135px;
+                    height: 175px;
+                    width: 175px;
+                }
+                & + img {
+                    display: block;
+                    position: relative;
+                    left: 130px;
+                    height: 188px;
+                    width: 160px;
+                }
+            }
+        }
+        #myModal {
+            display: none;
+            overflow: auto;
+            //background-color: #000;
+            //background-color: rgba(0,0,0,0.4);
+        }
+        &__burger {
+            display: block;
+            position: relative;
+            bottom: 74px;
+            left: 75%;
+            width: 90px;
+            z-index: 10;
+            cursor: pointer;
+            & img {
+                height: 50px;
+            }
+            &-menu {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                height: 476px;
+                margin: 12% 52% 12% 16%;
+                border: 2px solid #888;
+                width: 281px;
+                background-color: #fff;
+                box-shadow: 10px 10px 10px 10px #ecf0f1;
+                &__head {
+                    display: flex;
+                    &__logo {
+                        position: absolute;
+                        left: 140px;
+                    }
+                    &__close {
+                        position: absolute;
+                        left: 378px;
+                        cursor: pointer;
+                    }
+                }
+                &__section {
+                    margin: 47% 16% 0;
+                    display: block;
+                    width: 73%;
+                    left: 19px;
+                    top: -190px;
+                    &__nav {
+                        &:hover &::after {
+                            bottom: 133px;
+                        }
+                        &:hover &__solution{
+                            display: block;
+                        }
+                        &::after {
+                            bottom: 34px;
+                        }
+                        &__solution {
+                            display: none;
+                            & ul {
+                                margin: 0;
+                                padding: 0;
+                                & li {
+                                    list-style-type: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__access {
+                    position: relative;
+                    top: 352px;
+                    left: 17px;
+                    display: block;
+                    & button {
+                        display: block;
+                        display: table-footer-group;
+                        margin: 10px 0;
+                    }
                 }
             }
         }

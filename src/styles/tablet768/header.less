@@ -71,8 +71,8 @@
                         }
                         &::after {
                             content: url('../../public/vee.svg');
-                            position: relative;
-                            //bottom: 133px;
+                            position: absolute;
+                            top: 16px;
                             left: 101px;
                         }
                     }
@@ -111,6 +111,7 @@
                         border: 1px solid #16ACEA;
                         box-sizing: border-box;
                         border-radius: 4px;
+                        display: block;
                         &:hover {
                             background: #0093CF;
                             color: #fff;
@@ -223,6 +224,12 @@
                 }
             }
         }
+        #myModal {
+            display: none;
+            overflow: auto;
+            //background-color: #000;
+            //background-color: rgba(0,0,0,0.4);
+        }
         &__burger {
             display: block;
             position: relative;
@@ -235,25 +242,33 @@
                 height: 50px;
             }
             &-menu {
-                padding-top: 28px;
-                margin-left: 1500px;
-                width: 768px;
-                height: 627px;
-                box-shadow: 10px 10px 10px 10px #efe9e9;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                height: 476px;
+                margin: 12% 52% 12% 16%;
+                border: 2px solid #888;
+                width: 281px;
+                background-color: #fff;
+                box-shadow: 10px 10px 10px 10px #ecf0f1;
                 &__head {
                     display: flex;
                     &__logo {
                         position: absolute;
-                        left: 100px;
+                        left: 140px;
                     }
                     &__close {
                         position: absolute;
-                        left: 600px;
+                        left: 378px;
+                        cursor: pointer;
                     }
                 }
                 &__section {
-                    width: 100%;
-                    left: 80px;
+                    margin: 47% 16% 0;
+                    display: block;
+                    width: 73%;
+                    left: 19px;
+                    top: -190px;
                     &__nav {
                         &:hover &::after {
                             bottom: 133px;
@@ -277,9 +292,10 @@
                     }
                 }
                 &__access {
-                    position: absolute;
-                    top: 487px;
-                    left: 100px;
+                    position: relative;
+                    top: 352px;
+                    left: 17px;
+                    display: block;
                     & button {
                         display: block;
                         display: table-footer-group;
